@@ -1,0 +1,27 @@
+----------------------------------------------------------------------------------------------------------------------------------------------
+question 2: 
+
+In NLP, bigrams and trigrams are types of n-grams, where n represents the number of words grouped together in sequences:
+Bigrams: Sequences of two adjacent words in a text.
+Trigrams: Sequences of three adjacent words in a text.
+
+string.punctuation: This contains all common punctuation characters like !"#$%&'()*+,-./:;<=>?@[\]^_{|}~`.
+
+Translation table is essentially a mapping that tells the str.translate() method how to transform or replace specific characters in a string.
+How to Create a Translation Table:
+The str.maketrans(x,y,z) function generates a translation table.
+It takes up to three arguments:
+x: Characters to be replaced.
+y: Characters to replace with.
+z: Characters to delete.
+
+steps:
+1. read the csv file and store the lines in 'sentences'
+2. Combining sentences into a single text and converting to lowercase
+3. remove all the punctuations using translation table
+4. Splitting the text into words
+5. Counter() gives the {words:count} --> Counting word frequencies
+6. Generating bigrams and trigrams
+7. Counting bigram and trigram frequencies
+8. Printing the most common words, bigrams, and trigrams
+
