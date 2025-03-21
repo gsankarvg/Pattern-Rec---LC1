@@ -1,12 +1,14 @@
 import cv2 
 import numpy as np
 
-img = np.ones((500, 500, 3), dtype=np.uint8) * 255
+# img = np.ones((500, 500, 3), dtype=np.uint8) * 255
 
-cv2.rectangle(img, (50, 50), (150, 150), (255, 0, 0), -1)
-cv2.circle(img, (300, 300), 55, (0, 0, 255), -1)
-cv2.ellipse(img, (100, 450), (80, 50), 0, 0, 360, (0, 255, 0), -1)
-cv2.rectangle(img, (200, 100), (300, 200), (128, 0, 128), -1)
+# cv2.rectangle(img, (50, 50), (150, 150), (255, 0, 0), -1)
+# cv2.circle(img, (300, 300), 55, (0, 0, 255), -1)
+# cv2.ellipse(img, (100, 450), (80, 50), 0, 0, 360, (0, 255, 0), -1)
+# cv2.rectangle(img, (200, 100), (300, 200), (128, 0, 128), -1)
+
+img = cv2.imread('shapes.jpg', cv2.IMREAD_COLOR)
 
 
 pixel_vals = img.reshape((-1,3))
@@ -20,7 +22,7 @@ centers = np.uint8(centers)
 segmented_data = centers[labels.flatten()]
 segmented_image = segmented_data.reshape((img.shape))
 
-cv2.imshow('',segmented_image)
+cv2.imshow('',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
