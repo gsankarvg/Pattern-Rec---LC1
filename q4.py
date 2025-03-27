@@ -10,7 +10,6 @@ import numpy as np
 
 img = cv2.imread('shapes.jpg', cv2.IMREAD_COLOR)
 
-
 pixel_vals = img.reshape((-1,3))
 pixel_vals = np.float32(pixel_vals)
 
