@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 
 # img = np.ones((500, 500, 3), dtype=np.uint8) * 255
-
 # cv2.rectangle(img, (50, 50), (150, 150), (255, 0, 0), -1)
 # cv2.circle(img, (300, 300), 55, (0, 0, 255), -1)
 # cv2.ellipse(img, (100, 450), (80, 50), 0, 0, 360, (0, 255, 0), -1)
