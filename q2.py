@@ -2,7 +2,7 @@ import pandas as pd
 from collections import Counter, defaultdict
 from itertools import combinations
 from nltk.util import bigrams, trigrams
-from nltk.corpus import words, cmudict
+# from nltk.corpus import words, cmudict
 from nltk.tokenize import word_tokenize
 import pronouncing as pr
 from nltk.corpus import gutenberg
@@ -43,6 +43,9 @@ def rhyming_words(words):
         if w2 in pr.rhymes(w1) and w1 != w2:
             rhym.add((w1,w2))
     print(f"rhyming words are : {rhym}")
+
+
+
 
 
 df = pd.read_csv("textdata.csv")
